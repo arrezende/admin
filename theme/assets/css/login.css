@@ -1,0 +1,151 @@
+/*RESET NORMALIZE*/
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/*LOGIN*/
+.login {
+    background: #1D2025;
+    color: var(--color-default);
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    padding: 30px 0;
+    background-size: cover;
+}
+
+.login_box {
+    width: 400px;
+    max-width: 90%;
+    margin: auto;
+    padding: 35px;
+    background: #ffffff;
+}
+
+.login_box form {
+    display: block;
+    margin: 30px 0;
+}
+
+.login_box .hl {
+    text-align: center;
+    font-size: var(--font-max);
+}
+
+.login_box label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login_box label .field {
+    display: block;
+    font-size: var(--font-small);
+    font-weight: bold;
+}
+
+.login_box label input {
+    border: none;
+    border-bottom: 1px solid #1D2025;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: var(--font-normal);
+}
+
+.login_box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: var(--font-normal);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: #0F1B26;
+}
+
+.login_box button.icon-sign-in:before {
+    margin-right: 10px;
+}
+
+.login_box footer {
+    text-align: center;
+    font-size: var(--font-min);
+    font-weight: 300;
+}
+
+.login_box footer a {
+    display: block;
+    font-size: var(--font-normal);
+    color: var(--color-green);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.login_box footer a:hover {
+    color: var(--hover-color-green);
+}
+
+.login-img{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.login::before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+
+   
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.login_box.radius{
+    z-index: 9;
+}
+
+.alert {
+    margin-top: 2rem;
+    background: #811c1c;
+    padding: 1rem;
+    color: #fff;
+}
+
+.login.block .login_box{
+    z-index: -1 !important;
+}
+
+.alert.block{
+    background: #811c1c;
+    padding: 1rem;
+    color: #fff;
+    z-index: 9999;
+    position: relative;
+    margin: 1.5rem auto;
+    text-align: center;
+}
